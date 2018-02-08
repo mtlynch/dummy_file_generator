@@ -5,7 +5,7 @@
 
 ## Overview
 
-Dummy File Generator generates 
+Dummy File Generator generates files containing random data. The user can specify the number of bytes per file and the total amount of data to fill. Dummy File Generator will generate enough files to meet or exceed the total data amount specified.
 
 ## Example Usage
 
