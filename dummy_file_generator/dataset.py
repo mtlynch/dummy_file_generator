@@ -7,7 +7,7 @@ logger = logging.getLogger(__name__)
 def generate(file_generator, total_dataset_bytes):
     files_to_generate = _calculate_file_count(total_dataset_bytes,
                                               file_generator.bytes_per_file)
-    for i in range(files_to_generate):
+    for i in xrange(files_to_generate):
         file_generator.next_file()
         logger.info('Generated %d of %d files - %.1f%% complete', (i + 1),
                     files_to_generate, (100.0 * (i + 1)) / files_to_generate)
