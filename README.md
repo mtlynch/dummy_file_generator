@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/mtlynch/dummy_file_generator.svg?branch=master)](https://travis-ci.org/mtlynch/dummy_file_generator)
 [![Coverage Status](https://coveralls.io/repos/github/mtlynch/dummy_file_generator/badge.svg?branch=master)](https://coveralls.io/github/mtlynch/dummy_file_generator?branch=master)
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](LICENSE)
 
 ## Overview
 
