@@ -36,7 +36,7 @@ class FileGeneratorTest(unittest.TestCase):
 
         self.generator.next_file()
 
-        self.assertEqual([
+        self.assertItemsEqual([
             'dummy-prefix-00000000.testfile',
         ], os.listdir(self.test_dir))
         self.assertFileSizesEqual(42)
@@ -50,7 +50,7 @@ class FileGeneratorTest(unittest.TestCase):
         self.generator.next_file()
         self.generator.next_file()
 
-        self.assertEqual([
+        self.assertItemsEqual([
             'dummy-prefix-00000000.testfile',
             'dummy-prefix-00000001.testfile',
             'dummy-prefix-00000002.testfile',
@@ -64,7 +64,7 @@ class FileGeneratorTest(unittest.TestCase):
 
         self.generator.next_file()
 
-        self.assertEqual([
+        self.assertItemsEqual([
             'dummy-prefix-00000000.testfile',
         ], os.listdir(self.test_dir))
         self.assertFileSizesEqual(10 * 1024 * 1024)
